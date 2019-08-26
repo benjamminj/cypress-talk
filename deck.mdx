@@ -1,0 +1,663 @@
+import { Head, Appear, Image as FullScreenImage } from "mdx-deck";
+import Text from "./components/Text";
+import Handle from "./components/Handle";
+import BigHandle from "./components/BigHandle";
+import WithHandle from "./layouts/WithHandle";
+import InvertHandle from "./layouts/InvertHandle";
+import VisuallyHidden from "./layouts/VisuallyHidden";
+import List from "./components/List";
+import Image from "./components/Image";
+import Heading from "./components/Heading";
+import Highlight from "./components/Highlight";
+import { colors } from "./styles/variables";
+
+export { default as theme } from "./theme";
+
+<Head>
+  <title>End-to-End Testing with Cypress</title>
+  <link
+    href="https://fonts.googleapis.com/css?family=Fredoka+One|Bowlby+One+SC|Inconsolata|Source+Sans+Pro"
+    rel="stylesheet"
+  />
+</Head>
+
+<h1>
+  <Text size="xxl" weight="bold">
+    End-to-End Testing with Cypress
+  </Text>
+</h1>
+
+<h2>
+  <Text size="lg" weight="normal">
+    By Benjamin Johnson
+  </Text>
+</h2>
+
+<BigHandle />
+
+<div style={{ paddingTop: "10rem" }} />
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xl">About Me</Text>
+</h1>
+
+<Appear>
+  <h2>
+    <Text size="xl" align="left" display="block" >
+      💻 Software Engineer at <Highlight background={colors.blue[100]}>SourceStrike</Highlight>
+    </Text>
+  </h2>
+
+<h2>
+  <Text size="xl" align="left" display="block">
+    We build custom software solutions
+  </Text>
+</h2>
+
+  <h2>
+    <Text size="xl" align="left" display="block">
+      JS, TS, React, Node, etc.
+    </Text>
+  </h2>
+</Appear>
+
+<div style={{ paddingTop: "0rem" }} />
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">But first...a bit of testing philosophy</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left" padding="0 7vw">
+    Testing can be highly contentious.
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left">
+    Attitudes towards testing
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left">
+    #1. Test everything. No exceptions.
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left">
+    #2. "I should, but I don't"
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left">
+    #3. Meh
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Why testing?</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Testing is an investment</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Manual testing is fast when <br /> you've got a small app
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    But as big apps take <br /> a lot longer to test manually
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Refactoring without <br />
+    tests is scary
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    At the end of the day, <br /> testing is about{" "}
+    <Highlight background={colors.blue[100]}>confidence</Highlight>
+    <br /> and <Highlight background={colors.blue[100]}>efficiency</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    The <Highlight background={colors.blue[100]}>"testing portfolio"</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Static tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Unit tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Integration tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">E2E Tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Manual tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">...and many more!</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    So what's <Highlight background={colors.blue[100]}>Cypress?</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Cypress is a framework for <br />
+    <Highlight background={colors.blue[100]}>end-to-end testing</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Cypress is a app/framework for <br />
+    <Highlight background={colors.blue[100]}>end-to-end testing</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Built on top of <br />
+    <Highlight background={colors.blue[100]}>Chromium</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Other e2e testing tools <br />
+    use webdrivers.
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Cypress uses <br />
+    <Highlight background={colors.blue[100]}>browser automation APIs</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Cypress runs in the{" "}
+    <Highlight background={colors.blue[100]}>same thread</Highlight> <br />
+    as your application
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Cypress tests are <Highlight background={colors.blue[100]}>fast</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Cypress has unique access to <br />
+    <Highlight background={colors.blue[100]}>everything</Highlight> happening in
+    the browser
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Take shortcuts to get into certain application states.</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Stub / mock network traffic</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Modify data stores &amp; cookies directly</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Use familiar dev tools for debugging</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Cypress is built for async testing</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Show &amp; tell</Text>
+</h1>
+
+---
+
+<!--
+Cypress is a powerful e2e testinig tool
+
+- built on Chromium
+- uses Chrome's browser automation APIS
+
+This means that Cypress is fast (no network latency)
+
+Easily mock / stub network traffic
+Debug failed tests using familiar dev tools
+Take "shortcuts" when testing
+
+Easy, simple to read tests. (jQuery-esque code)
+
+DEMO
+-->
+
+---
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+.
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Automated testing 🤖</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xl" align="left">
+    Automated tests are scripts that we run to make sure our code isn't broken
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Why automated testing? 🤷‍♂️</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h2>
+  <Text size="xxl" align="left" display="block">
+    ⚡️ Faster than manual testing
+  </Text>
+</h2>
+
+---
+
+export default WithHandle;
+
+<h2>
+  <Text size="xxl" align="left" display="block">
+    ⚙️ Reliable &amp; consistent
+  </Text>
+</h2>
+
+---
+
+export default WithHandle;
+
+<h2>
+  <Text size="xxl" align="left" display="block">
+    📝 Documents your code
+  </Text>
+</h2>
+
+---
+
+export default WithHandle;
+
+<h2>
+  <Text size="xxl" align="left" display="block">
+    It doesn't have to be fancy — we can even use a plain{" "}
+    <Highlight background={colors.blue[100]}>node</Highlight> script
+  </Text>
+</h2>
+
+---
+
+export default WithHandle;
+
+<h2>
+  <Text size="xxl" align="left" display="block">
+    Let's spice it up by using{" "}
+    <Highlight background={colors.blue[100]}>assert</Highlight>
+  </Text>
+</h2>
+
+---
+
+export default WithHandle;
+
+<h2>
+  <Text size="xl" align="left" display="block">
+    Most JavaScript projects will use some sort of{" "}
+    <Highlight background={colors.blue[100]}>test runner</Highlight>
+  </Text>
+</h2>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Common testing terms ✏️</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<Appear>
+  <h2>
+    <Text size="xl" align="left" display="block">
+      Test runner —&nbsp;&nbsp;
+      <Highlight background={colors.blue[100]}>jest</Highlight>
+    </Text>
+  </h2>
+  <h2>
+    <Text size="xl" align="left" display="block">
+      Test suite —&nbsp;&nbsp;
+      <Highlight background={colors.blue[100]}>describe</Highlight>
+    </Text>
+  </h2>
+  <h2>
+    <Text size="xl" align="left" display="block">
+      Unit test —&nbsp;&nbsp;
+      <Highlight background={colors.blue[100]}>it</Highlight>
+    </Text>
+  </h2>
+  <h2>
+    <Text size="xl" align="left" display="block">
+      Test assertion —&nbsp;&nbsp;
+      <Highlight background={colors.blue[100]}>expect( ).toEqual( )</Highlight>
+    </Text>
+  </h2>
+</Appear>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Unit tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Unit tests test a single{" "}
+    <Highlight background={colors.blue[100]}>unit</Highlight> of code
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">
+    Unit tests should be{" "}
+    <Highlight background={colors.blue[100]}>fast</Highlight> and{" "}
+    <Highlight background={colors.blue[100]}>isolated</Highlight>
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">Integration tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left">
+    Integration tests test the{" "}
+    <Highlight background={colors.blue[100]}>integration</Highlight> of units
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left" padding="0 10rem">
+    Err on the side of having "too many" integration tests
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl">End-to-end tests</Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<h1>
+  <Text size="xxl" align="left">
+    End-to-end tests make sure the{" "}
+    <Highlight background={colors.blue[100]}>front-end</Highlight> works with
+    the <Highlight background={colors.blue[100]}>back-end</Highlight> correctly.
+  </Text>
+</h1>
+
+---
+
+export default WithHandle;
+
+<Heading size="xxxl">Thanks! 👏</Heading>
