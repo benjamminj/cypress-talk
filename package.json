@@ -24,5 +24,7 @@
     "react-testing-library": "^5.4.4"
   },
   "name": "components-everyone-can-use",
-  "dependencies": {}
+  "dependencies": {
+    "@testing-library/cypress": "^4.1.1"
+  }
 }
